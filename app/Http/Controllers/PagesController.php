@@ -20,6 +20,6 @@ class PagesController extends Controller
             'title' => 'Services'
         );
         $title= 'Tjenester!'
-        return view('pages.services')->with('title');
+        return view('pages.services')->with($data);
     }
 }
