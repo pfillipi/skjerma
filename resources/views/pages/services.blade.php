@@ -2,5 +2,9 @@
 
 @section('content')
   <h1>{{$title ?? ''}}</h1>
-  <p>Dette er tjenestesiden</p>
+  @if(count($services) > 0)
+    @foreach($services as $service)
+
+    @endforeach
+  @endif
 @endsection
