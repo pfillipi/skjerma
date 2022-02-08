@@ -19,5 +19,7 @@ Route::post('/create', function(){
     Article::create([
         'title' => request('title'),
         'body' => request('body'),
-    ])
+    ]);
+    return redirect('/create');
+    return view('create');
 });
